@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-06 Thu 18:20 -->
+<!-- 2022-01-06 Thu 18:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My Hammerspoon Config</title>
@@ -36,15 +36,15 @@
 <body>
 <div id="content">
 
-<div id="outline-container-org0006be8" class="outline-2">
-<h2 id="org0006be8">My Hammerspoon config</h2>
-<div class="outline-text-2" id="text-org0006be8">
+<div id="outline-container-orgc40642a" class="outline-2">
+<h2 id="orgc40642a">My Hammerspoon config</h2>
+<div class="outline-text-2" id="text-orgc40642a">
 <p>
-<a href="https://www.hammerspoon.org/">Hammerspoon</a> is a great tool for automating OS X tasks. In this post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a> and its purpose.
+<a href="https://www.hammerspoon.org/">Hammerspoon</a> is a tool for automating OS X tasks. In this post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a>.
 </p>
 
 <p>
-I actually use two configs. One personal, one professional. However, I've mapped the hotkeys in a logical fashion to preserve my sanity. Currently, the configs serve two purposes (if you place window and application management under the same umbrella):
+I actually use two: one personal, one professional. However, I've mapped the keys in a way that preserves my sanity. Currently, the setup serves two purposes (if you place window and application management under the same umbrella):
 </p>
 
 <ol class="org-ol">
@@ -53,7 +53,7 @@ I actually use two configs. One personal, one professional. However, I've mapped
 </ol>
 
 <p>
-First, for window management, I've modelled the frame manipulation on Vim keybindings:
+For window management, I've modelled the manipulation on Vim keybindings:
 </p>
 
 <ul class="org-ul">
@@ -64,7 +64,7 @@ First, for window management, I've modelled the frame manipulation on Vim keybin
 </ul>
 
 <p>
-Finally, the <code>F</code> key, a little less synonymous, maximises the window. Here is an example:
+The <code>F</code> key, a little less synonymous, maximises windows. Here is the simple Lua script that achieves this:
 </p>
 
 <div class="org-src-container">
@@ -83,7 +83,7 @@ end)
 </div>
 
 <p>
-Next comes application switching. For this I use the first two rows of the number pad: <code>7, 8, 9, 4, 5, 6</code>. Row one houses the standard application shortcuts for both computers:
+Next, application switching. Row one houses the standard application shortcuts for both computers:
 </p>
 
 <ul class="org-ul">
@@ -93,7 +93,7 @@ Next comes application switching. For this I use the first two rows of the numbe
 </ul>
 
 <p>
-Now the second row, for custom applications:
+Row two (custom applications): 
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -135,7 +135,7 @@ Now the second row, for custom applications:
 </table>
 
 <p>
-Even this row maintains a narrative of sorts. <code>4</code> is the primary focus (code), <code>5</code> is for secondary focus (i.e. checking logs or designs), and <code>6</code> for social or miscellaneous functions.
+Even this row maintains a narrative of sorts. <code>4</code> is primary focus (code), <code>5</code> for secondary focus (i.e. checking logs or designs), and <code>6</code> for miscellaneous functions.
 </p>
 
 <p>
@@ -149,7 +149,8 @@ Finally, the last row, which consists of various browser actions:
 </ul>
 
 <p>
-In case you find it helpful, I've published the full config file on <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">GitHub</a>.
+I've published the full config file on <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">GitHub</a>.
+t
 </p>
 
 <hr />
