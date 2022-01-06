@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-06 Thu 18:27 -->
+<!-- 2022-01-06 Thu 18:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My Hammerspoon Config</title>
@@ -36,9 +36,9 @@
 <body>
 <div id="content">
 
-<div id="outline-container-orgc40642a" class="outline-2">
-<h2 id="orgc40642a">My Hammerspoon config</h2>
-<div class="outline-text-2" id="text-orgc40642a">
+<div id="outline-container-org7187719" class="outline-2">
+<h2 id="org7187719">My Hammerspoon config</h2>
+<div class="outline-text-2" id="text-org7187719">
 <p>
 <a href="https://www.hammerspoon.org/">Hammerspoon</a> is a tool for automating OS X tasks. In this post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a>.
 </p>
@@ -64,7 +64,7 @@ For window management, I've modelled the manipulation on Vim keybindings:
 </ul>
 
 <p>
-The <code>F</code> key, a little less synonymous, maximises windows. Here is the simple Lua script that achieves this:
+The <code>F</code> key, a little less synonymous, maximises windows. Here is the littlee Lua script that achieves this:
 </p>
 
 <div class="org-src-container">
@@ -150,7 +150,6 @@ Finally, the last row, which consists of various browser actions:
 
 <p>
 I've published the full config file on <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">GitHub</a>.
-t
 </p>
 
 <hr />
