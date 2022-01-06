@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-06 Thu 18:29 -->
+<!-- 2022-01-06 Thu 18:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My Hammerspoon Config</title>
@@ -36,9 +36,9 @@
 <body>
 <div id="content">
 
-<div id="outline-container-org7187719" class="outline-2">
-<h2 id="org7187719">My Hammerspoon config</h2>
-<div class="outline-text-2" id="text-org7187719">
+<div id="outline-container-orgfa75a1b" class="outline-2">
+<h2 id="orgfa75a1b">My Hammerspoon config</h2>
+<div class="outline-text-2" id="text-orgfa75a1b">
 <p>
 <a href="https://www.hammerspoon.org/">Hammerspoon</a> is a tool for automating OS X tasks. In this post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a>.
 </p>
@@ -64,7 +64,7 @@ For window management, I've modelled the manipulation on Vim keybindings:
 </ul>
 
 <p>
-The <code>F</code> key, a little less synonymous, maximises windows. Here is the littlee Lua script that achieves this:
+The <code>F</code> key, a little less synonymous, maximises windows. Here is the little Lua script for <code>CMD</code> + <code>SHIFT</code> + <code>H</code>:
 </p>
 
 <div class="org-src-container">
@@ -115,19 +115,19 @@ Row two (custom applications):
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>4</code></td>
+<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>NUM 4</code></td>
 <td class="org-left">Sublime Text</td>
 <td class="org-left">PhpStorm</td>
 </tr>
 
 <tr>
-<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>5</code></td>
+<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>NUM 5</code></td>
 <td class="org-left">Alacritty</td>
 <td class="org-left">Figma</td>
 </tr>
 
 <tr>
-<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>6</code></td>
+<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>NUM 6</code></td>
 <td class="org-left">Spotify</td>
 <td class="org-left">Microsoft Teams</td>
 </tr>
