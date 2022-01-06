@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-06 Thu 18:06 -->
+<!-- 2022-01-06 Thu 18:20 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My Hammerspoon Config</title>
@@ -36,31 +36,31 @@
 <body>
 <div id="content">
 
-<div id="outline-container-orgc800d9e" class="outline-2">
-<h2 id="orgc800d9e">My Hammerspoon config</h2>
-<div class="outline-text-2" id="text-orgc800d9e">
+<div id="outline-container-org0006be8" class="outline-2">
+<h2 id="org0006be8">My Hammerspoon config</h2>
+<div class="outline-text-2" id="text-org0006be8">
 <p>
-<a href="https://www.hammerspoon.org/">Hammerspoon</a> is a great tool for automating OS X tasks. In this short post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a> and its purpose.
+<a href="https://www.hammerspoon.org/">Hammerspoon</a> is a great tool for automating OS X tasks. In this post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a> and its purpose.
 </p>
 
 <p>
 I actually use two configs. One personal, one professional. However, I've mapped the hotkeys in a logical fashion to preserve my sanity. Currently, the configs serve two purposes (if you place window and application management under the same umbrella):
 </p>
 
-<ul class="org-ul">
+<ol class="org-ol">
 <li>Window management</li>
 <li>Browser actions</li>
-</ul>
+</ol>
 
 <p>
 First, for window management, I've modelled the frame manipulation on Vim keybindings:
 </p>
 
 <ul class="org-ul">
-<li><code>H</code> = width / 2 and left align</li>
-<li><code>J</code> = height / 2 and bottom align</li>
-<li><code>K</code> = height / 2 and top align</li>
-<li><code>L</code> = width / 2 and right align</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>H</code> = width / 2 and left align</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>J</code> = height / 2 and bottom align</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>K</code> = height / 2 and top align</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>L</code> = width / 2 and right align</li>
 </ul>
 
 <p>
@@ -87,9 +87,9 @@ Next comes application switching. For this I use the first two rows of the numbe
 </p>
 
 <ul class="org-ul">
-<li><code>7</code> = Firefox</li>
-<li><code>8</code> = Emacs</li>
-<li><code>9</code> = Finder</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>NUM 7</code> = Firefox</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>NUM 8</code> = Emacs</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>NUM 9</code> = Finder</li>
 </ul>
 
 <p>
@@ -115,19 +115,19 @@ Now the second row, for custom applications:
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><code>4</code></td>
+<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>4</code></td>
 <td class="org-left">Sublime Text</td>
 <td class="org-left">PhpStorm</td>
 </tr>
 
 <tr>
-<td class="org-left"><code>5</code></td>
+<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>5</code></td>
 <td class="org-left">Alacritty</td>
 <td class="org-left">Figma</td>
 </tr>
 
 <tr>
-<td class="org-left"><code>6</code></td>
+<td class="org-left"><code>CMD</code> + <code>SHIFT</code> + <code>6</code></td>
 <td class="org-left">Spotify</td>
 <td class="org-left">Microsoft Teams</td>
 </tr>
@@ -135,7 +135,7 @@ Now the second row, for custom applications:
 </table>
 
 <p>
-Even this row has some form of organisation. <code>4</code> is the primary focus (code), <code>5</code> is for secondary focus (i.e. checking logs or designs), and <code>6</code> for social or miscellaneous functions.
+Even this row maintains a narrative of sorts. <code>4</code> is the primary focus (code), <code>5</code> is for secondary focus (i.e. checking logs or designs), and <code>6</code> for social or miscellaneous functions.
 </p>
 
 <p>
@@ -143,13 +143,19 @@ Finally, the last row, which consists of various browser actions:
 </p>
 
 <ul class="org-ul">
-<li><code>1</code> = open new empty tab</li>
-<li><code>2</code> = show browsing history</li>
-<li><code>3</code> = open <a href="http://localhost:3000/">http://localhost:3000/</a></li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>1</code> = open new empty tab</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>2</code> = show browsing history</li>
+<li><code>CMD</code> + <code>SHIFT</code> + <code>3</code> = open <a href="http://localhost:3000/">http://localhost:3000/</a></li>
 </ul>
 
 <p>
 In case you find it helpful, I've published the full config file on <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">GitHub</a>.
+</p>
+
+<hr />
+
+<p>
+<a href="index.html">Back</a>
 </p>
 </div>
 </div>
