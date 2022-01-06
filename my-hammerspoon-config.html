@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-01-06 Thu 18:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Hammerspoon Config</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ben MacLaurin" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+
+<div id="outline-container-org4a655b3" class="outline-2">
+<h2 id="org4a655b3">My Hammerspoon config</h2>
+<div class="outline-text-2" id="text-org4a655b3">
+<p>
+<a href="https://www.hammerspoon.org/">Hammerspoon</a> is a great tool for automating OS X tasks. In this short post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a> and its purpose.
+</p>
+
+<p>
+I actually use two configs. One personal, one professional. However, I've mapped the hotkeys in a logical fashion to preserve my sanity. Currently, the configs serve two purposes (if you place window and application management under the same umbrella):
+</p>
+
+<ul class="org-ul">
+<li>Window management</li>
+<li>Browser actions</li>
+</ul>
+
+<p>
+First, for window management, I've modelled the frame manipulation on Vim keybindings:
+</p>
+
+<ul class="org-ul">
+<li><code>H</code> = width / 2 and left align</li>
+<li><code>J</code> = height / 2 and bottom align</li>
+<li><code>K</code> = height / 2 and top align</li>
+<li><code>L</code> = width / 2 and right align</li>
+</ul>
+
+<p>
+Finally, the <code>F</code> key, a little less synonymous, maximises the window. Here is an example:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-lua">hs.hotkey.bind({"cmd", "shift"}, "H", function()
+    local win = hs.window.focusedWindow()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:frame()
+
+    f.x = max.x
+    f.h = max.h
+    f.w = max.w / 2
+    win:setFrame(f)
+end)
+</pre>
+</div>
+
+<p>
+Next comes application switching. For this I use the first two rows of the number pad: <code>7, 8, 9, 4, 5, 6</code>. Row one houses the standard application shortcuts for both computers:
+</p>
+
+<ul class="org-ul">
+<li><code>7</code> = Firefox</li>
+<li><code>8</code> = Emacs</li>
+<li><code>9</code> = Finder</li>
+</ul>
+
+<p>
+Now the second row, for custom applications:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Personal</th>
+<th scope="col" class="org-left">Work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>4</code></td>
+<td class="org-left">Sublime Text</td>
+<td class="org-left">PhpStorm</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>5</code></td>
+<td class="org-left">Alacritty</td>
+<td class="org-left">Figma</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>6</code></td>
+<td class="org-left">Spotify</td>
+<td class="org-left">Microsoft Teams</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Even this row has some form of organisation. <code>4</code> is the primary focus (code), <code>5</code> is for secondary focus (i.e. checking logs or designs), and <code>6</code> for social or miscellaneous functions.
+</p>
+
+<p>
+Finally, the last row, which consists of various browser actions:
+</p>
+
+<ul class="org-ul">
+<li><code>1</code> = open new empty tab</li>
+<li><code>2</code> = show browsing history</li>
+<li><code>3</code> = open <a href="http://localhost:3000/">http://localhost:3000/</a></li>
+</ul>
+
+<p>
+In case you find it helpful, I've published the full config file on <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">GitHub</a>.
+</p>
+
+<hr />
+
+<p>
+<a href="index.html">Back</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
