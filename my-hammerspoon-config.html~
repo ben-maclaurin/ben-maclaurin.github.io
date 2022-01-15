@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-06 Thu 18:32 -->
+<!-- 2022-01-15 Sat 12:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My Hammerspoon Config</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Ben MacLaurin" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -36,15 +36,16 @@
 <body>
 <div id="content">
 
-<div id="outline-container-orga3dc76f" class="outline-2">
-<h2 id="orga3dc76f">My Hammerspoon config</h2>
-<div class="outline-text-2" id="text-orga3dc76f">
+<div id="outline-container-org0328a35" class="outline-2">
+<h2 id="org0328a35">My Hammerspoon config</h2>
+<div class="outline-text-2" id="text-org0328a35">
 <p>
 <a href="https://www.hammerspoon.org/">Hammerspoon</a> is a tool for automating OS X tasks. In this post, I'll share <a href="https://github.com/ben-maclaurin/hammerspoon/blob/main/init.lua">my configuration</a>.
 </p>
 
 <p>
 I actually use two: one personal, one professional. However, I've mapped the keys in a way that preserves my sanity. Currently, the setup serves two purposes (if you place window and application management under the same umbrella):
+ttt
 </p>
 
 <ol class="org-ol">
@@ -54,7 +55,6 @@ I actually use two: one personal, one professional. However, I've mapped the key
 
 <p>
 For window management, I've modelled the manipulation on <a href="https://www.vim.org/">Vim</a> keybindings:
-t
 </p>
 
 <ul class="org-ul">

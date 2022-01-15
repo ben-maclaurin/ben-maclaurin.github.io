@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-03 Mon 13:46 -->
+<!-- 2022-01-15 Sat 12:28 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Ben MacLaurin" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -35,9 +35,9 @@
 </head>
 <body>
 <div id="content">
-<div id="outline-container-orgf2f29f3" class="outline-2">
-<h2 id="orgf2f29f3">How this blog works</h2>
-<div class="outline-text-2" id="text-orgf2f29f3">
+<div id="outline-container-orgeb033eb" class="outline-2">
+<h2 id="orgeb033eb">How this blog works</h2>
+<div class="outline-text-2" id="text-orgeb033eb">
 <p>
 Org mode has been my daily driver for notes and general productivity. I won't explain the package here, but if unfamiliar, you might benefit from this <a href="https://orgmode.org/worg/org-tutorials/org4beginners.html">gentle introduction</a>.
 </p>
@@ -50,9 +50,6 @@ Org mode ships with a <a href="https://orgmode.org/manual/HTML-Export.html">HTML
 I've published the <a href="https://github.com/ben-maclaurin/elde">source code</a> in case anyone wants to do the same. Its not particularly elegant, but it does the job.
 </p>
 
-<p>
-t
-</p>
 <hr />
 <p>
 <a href="index.html">Back</a>
