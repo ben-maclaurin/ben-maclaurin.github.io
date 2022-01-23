@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-01-23 Sun 17:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ben MacLaurin" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgf310574" class="outline-2">
+<h2 id="orgf310574">Vim and Zettelkasten</h2>
+<div class="outline-text-2" id="text-orgf310574">
+<p>
+Maintaining a repository of thoughts is not a new idea. A plethora of
+note-taking tools exist today, such as <a href="https://obsidian.md/">Obsidian</a>,
+<a href="https://www.remnote.com/">RemNote</a> and <a href="https://roamresearch.com/">Roam
+Research</a>, all of which seem inspired by the
+<a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten method</a>. The
+technique, developed by the Swiss physician Conrad Gessner, helps its users
+collate personal knowledge via numbered cards and tags. <a href="https://www.amazon.co.uk/How-Take-Smart-Notes-Nonfiction-ebook/dp/B06WVYW33Y">How to Take Smart Notes</a> provides great insight into the approach. 
+</p>
+
+<p>
+Whilst I don't doubt the usefulness of the aforementioned apps, they fail to
+engage me. This is because the simplicity of the Zettelkasten is what attracted
+me in the first place. There is a definite serenity to benefit from, and
+friction is eliminated because there are no abstractions, UIs or complex
+knowledge graphs to distract. It's just you, the pen and the paper.
+</p>
+
+<p>
+The only app I came close to using is "The Archive". Unlike most other tools,
+it very clearly attributes its founding premise to the Zettelkasten, and its creators,
+Christian and Sascha, are also authors of <a href="https://zettelkasten.de">https://zettelkasten.de</a>, a site
+dedicated to the technique. If I weren't a programmer, this would unequivocally
+be my tool of choice, and I highly recommend you give its 60 day trial a shot.
+</p>
+
+<p>
+After using "The Archive" for a couple of days, I couldn't help but wonder: can
+I replicate this process in Vim? I knew it was possible, but how much
+configuration would it take? It turns out just one line.
+</p>
+</div>
+
+<div id="outline-container-org83d3b9d" class="outline-3">
+<h3 id="org83d3b9d">Why it works</h3>
+<div class="outline-text-3" id="text-org83d3b9d">
+<p>
+What would this solution require to be effective? These were my requirements:
+</p>
+
+<ul class="org-ul">
+<li>Basic editor (obviously)</li>
+<li>Version control</li>
+<li>Search</li>
+<li>Unique note identifiers</li>
+<li>Bi-directional linking</li>
+<li>Dates and timestamps</li>
+<li>Index files</li>
+</ul>
+</div>
+
+<div id="outline-container-org74f8c15" class="outline-4">
+<h4 id="org74f8c15">Editor</h4>
+<div class="outline-text-4" id="text-org74f8c15">
+<p>
+If you haven't guessed, the editor is Vim. If you are a programmer, writer, or
+avid typist, I definitely suggest checking it out. It has dramatically improved
+my editing speed and workflow.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org55348c4" class="outline-4">
+<h4 id="org55348c4">Version control</h4>
+<div class="outline-text-4" id="text-org55348c4">
+<p>
+For version control I use Git. Nothing special or surprising here. In addition
+to version control, Git provides a backup of my notes, and a method of quick
+retrieval should I be using other machines.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbbcb5c4" class="outline-4">
+<h4 id="orgbbcb5c4">Search</h4>
+<div class="outline-text-4" id="text-orgbbcb5c4">
+<p>
+Git provides a convenient command, <code>git grep</code> which allows you to search for
+patterns across a repository. Here is an example inside my  Zettelkasten:
+</p>
+
+<p>
+<script id="asciicast-YwhFs6m5N7lPTPLgbc4BljFmY" src="https://asciinema.org/a/YwhFs6m5N7lPTPLgbc4BljFmY.js" async></script>
+</p>
+
+<p>
+In the clip I search for the term "honours", and two files are returned: 
+</p>
+
+<ul class="org-ul">
+<li><code>1642627149 Polygot computing.txt</code></li>
+<li><code>1642661741 Page audio widget.txt</code></li>
+</ul>
+
+<p>
+Both of these notes contain a reference to the <code>1642801264 Honours.txt</code> index
+file. More on index files later.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb76cbef" class="outline-4">
+<h4 id="orgb76cbef">Unique idenitifiers</h4>
+<div class="outline-text-4" id="text-orgb76cbef">
+<p>
+You may have noticed the seemingly random set of numbers prefixing each
+filename. In reality, they are not random at all, and serve an important
+purpose. These numbers are Unix timestamps. Not only does this ensure every
+note is unique, it also provides a way of dating thoughts. For example, the id
+for the file <code>1642627149 Polygot computing.txt</code> is <code>1642627149</code>, which in GMT
+resolves to <code>Wednesday, 19 January 2022 21:19:09</code>.
+</p>
+
+<p>
+Here is how I register new notes:
+</p>
+
+<script id="asciicast-5qD01WcaHx2X7dIjzsiSIsr7c" src="https://asciinema.org/a/5qD01WcaHx2X7dIjzsiSIsr7c.js" async></script>
+
+<p>
+Since all notes are unique, tab can be used to quickly autocomplete the
+filename given any id:
+</p>
+
+<script id="asciicast-sW8wiWPsl824uCflhsynSbRMj" src="https://asciinema.org/a/sW8wiWPsl824uCflhsynSbRMj.js" async></script>
+</div>
+</div>
+
+<div id="outline-container-org8be9862" class="outline-4">
+<h4 id="org8be9862">Bi-directional linking</h4>
+<div class="outline-text-4" id="text-org8be9862">
+<p>
+Jumping to another file path is possible by selecting it in visual mode and
+hitting <code>gf</code>. You can then navigate backwards using using <code>CTRL + o</code>.
+</p>
+
+<p>
+Since the unix timestamps are difficult to recall from memory, here we find the
+single line of vimscript mentioned at the beginning of the post: 
+</p>
+
+<p>
+<code>nnoremap cp :let @" = expand("%:t")&lt;cr&gt;</code>
+</p>
+
+<p>
+When <code>cp</code> is pressed, it conveniently copies the open filename to the
+clipboard. It can then be pasted into another note to create a bi-directional
+link:
+</p>
+
+<script id="asciicast-HW2tywylHFzGDECQNnG0pAF0L" src="https://asciinema.org/a/HW2tywylHFzGDECQNnG0pAF0L.js" async></script>
+
+</div>
+</div>
+
+<div id="outline-container-org04d2b9f" class="outline-4">
+<h4 id="org04d2b9f">Index files</h4>
+<div class="outline-text-4" id="text-org04d2b9f">
+<p>
+A feature of Gessner's Zettelkasten are index files. If it is not clear from the
+name, index files act as entry points for particular topics. This is a good way
+to:
+</p>
+
+<ol class="org-ol">
+<li>Identify links between existing notes and new notes</li>
+<li>Retrieve all notes on a specific subject</li>
+</ol>
+
+<p>
+I tend to prefer keeping the titles broad, such as "productivity", "physics" or
+"CS". Here is a quick demonstration:
+</p>
+
+<script id="asciicast-vbzN6cJltz6cQD8gEow6troKS" src="https://asciinema.org/a/vbzN6cJltz6cQD8gEow6troKS.js" async></script>
+
+<hr />
+
+<p>
+<a href="index.html">Back</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
