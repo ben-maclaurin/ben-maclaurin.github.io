@@ -3,13 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-23 Sun 17:18 -->
+<!-- 2022-01-31 Mon 00:25 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Ben MacLaurin" />
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css">
+<link rel="stylesheet" type="text/css" href="index.css" />
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -35,9 +36,10 @@
 </head>
 <body>
 <div id="content">
-<div id="outline-container-orgf310574" class="outline-2">
-<h2 id="orgf310574">Vim and Zettelkasten</h2>
-<div class="outline-text-2" id="text-orgf310574">
+
+<div id="outline-container-orgba8d108" class="outline-2">
+<h2 id="orgba8d108">Vim and Zettelkasten</h2>
+<div class="outline-text-2" id="text-orgba8d108">
 <p>
 Maintaining a repository of thoughts is not a new idea. A plethora of
 note-taking tools exist today, such as <a href="https://obsidian.md/">Obsidian</a>,
@@ -71,9 +73,9 @@ configuration would it take? It turns out just one line.
 </p>
 </div>
 
-<div id="outline-container-org83d3b9d" class="outline-3">
-<h3 id="org83d3b9d">Why it works</h3>
-<div class="outline-text-3" id="text-org83d3b9d">
+<div id="outline-container-org67a156b" class="outline-3">
+<h3 id="org67a156b">Why it works</h3>
+<div class="outline-text-3" id="text-org67a156b">
 <p>
 What would this solution require to be effective? These were my requirements:
 </p>
@@ -89,9 +91,9 @@ What would this solution require to be effective? These were my requirements:
 </ul>
 </div>
 
-<div id="outline-container-org74f8c15" class="outline-4">
-<h4 id="org74f8c15">Editor</h4>
-<div class="outline-text-4" id="text-org74f8c15">
+<div id="outline-container-org54a0b64" class="outline-4">
+<h4 id="org54a0b64">Editor</h4>
+<div class="outline-text-4" id="text-org54a0b64">
 <p>
 If you haven't guessed, the editor is Vim. If you are a programmer, writer, or
 avid typist, I definitely suggest checking it out. It has dramatically improved
@@ -100,9 +102,9 @@ my editing speed and workflow.
 </div>
 </div>
 
-<div id="outline-container-org55348c4" class="outline-4">
-<h4 id="org55348c4">Version control</h4>
-<div class="outline-text-4" id="text-org55348c4">
+<div id="outline-container-orgd150a43" class="outline-4">
+<h4 id="orgd150a43">Version control</h4>
+<div class="outline-text-4" id="text-orgd150a43">
 <p>
 For version control I use Git. Nothing special or surprising here. In addition
 to version control, Git provides a backup of my notes, and a method of quick
@@ -111,9 +113,9 @@ retrieval should I be using other machines.
 </div>
 </div>
 
-<div id="outline-container-orgbbcb5c4" class="outline-4">
-<h4 id="orgbbcb5c4">Search</h4>
-<div class="outline-text-4" id="text-orgbbcb5c4">
+<div id="outline-container-org6b47f4b" class="outline-4">
+<h4 id="org6b47f4b">Search</h4>
+<div class="outline-text-4" id="text-org6b47f4b">
 <p>
 Git provides a convenient command, <code>git grep</code> which allows you to search for
 patterns across a repository. Here is an example inside my  Zettelkasten:
@@ -139,9 +141,9 @@ file. More on index files later.
 </div>
 </div>
 
-<div id="outline-container-orgb76cbef" class="outline-4">
-<h4 id="orgb76cbef">Unique idenitifiers</h4>
-<div class="outline-text-4" id="text-orgb76cbef">
+<div id="outline-container-orgcba4ac6" class="outline-4">
+<h4 id="orgcba4ac6">Unique idenitifiers</h4>
+<div class="outline-text-4" id="text-orgcba4ac6">
 <p>
 You may have noticed the seemingly random set of numbers prefixing each
 filename. In reality, they are not random at all, and serve an important
@@ -163,12 +165,13 @@ filename given any id:
 </p>
 
 <script id="asciicast-sW8wiWPsl824uCflhsynSbRMj" src="https://asciinema.org/a/sW8wiWPsl824uCflhsynSbRMj.js" async></script>
+
 </div>
 </div>
 
-<div id="outline-container-org8be9862" class="outline-4">
-<h4 id="org8be9862">Bi-directional linking</h4>
-<div class="outline-text-4" id="text-org8be9862">
+<div id="outline-container-org375a0c8" class="outline-4">
+<h4 id="org375a0c8">Bi-directional linking</h4>
+<div class="outline-text-4" id="text-org375a0c8">
 <p>
 Jumping to another file path is possible by selecting it in visual mode and
 hitting <code>gf</code>. You can then navigate backwards using using <code>CTRL + o</code>.
@@ -194,9 +197,9 @@ link:
 </div>
 </div>
 
-<div id="outline-container-org04d2b9f" class="outline-4">
-<h4 id="org04d2b9f">Index files</h4>
-<div class="outline-text-4" id="text-org04d2b9f">
+<div id="outline-container-orgbd7f42d" class="outline-4">
+<h4 id="orgbd7f42d">Index files</h4>
+<div class="outline-text-4" id="text-orgbd7f42d">
 <p>
 A feature of Gessner's Zettelkasten are index files. If it is not clear from the
 name, index files act as entry points for particular topics. This is a good way

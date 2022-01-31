@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-21 Fri 21:54 -->
+<!-- 2022-01-31 Mon 00:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ben MacLaurin</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Ben MacLaurin" />
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css">
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -36,9 +36,9 @@
 <body>
 <div id="content">
 
-<div id="outline-container-org77879f3" class="outline-2">
-<h2 id="org77879f3">Ben MacLaurin</h2>
-<div class="outline-text-2" id="text-org77879f3">
+<div id="outline-container-org25cf736" class="outline-2">
+<h2 id="org25cf736">Ben MacLaurin</h2>
+<div class="outline-text-2" id="text-org25cf736">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -56,17 +56,17 @@
 <tbody>
 <tr>
 <td class="org-left"><a href="zettelkasten-method-and-vim.html">Vim and Zettelkasten</a></td>
-<td class="org-left">21st Jan 2022</td>
+<td class="org-left">21/01/2022</td>
 </tr>
 
 <tr>
 <td class="org-left"><a href="my-hammerspoon-config.html">My Hammerspoon config</a></td>
-<td class="org-left">6th Jan 2022</td>
+<td class="org-left">06/01/2022</td>
 </tr>
 
 <tr>
 <td class="org-left"><a href="how-this-blog-works.html">How this blog works</a></td>
-<td class="org-left">3rd Jan 2022</td>
+<td class="org-left">03/01/2022</td>
 </tr>
 </tbody>
 </table>
